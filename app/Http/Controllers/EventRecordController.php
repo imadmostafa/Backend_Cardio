@@ -29,12 +29,7 @@ class EventRecordController extends Controller
                  'message'=>'patient id missing'
             ]);
         }
-        /*if($validator->fails()){
-            return response()->json([
-                'success' => false,
-                 'message'=>'patient id missing'
-            ]);
-        }*/
+
 
 
 

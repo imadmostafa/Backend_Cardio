@@ -8,10 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 class PatientRecordController extends Controller
 {
-    //get all patients records with number of events
+
     public function getAll_Patients(){
-   //  $patients=Patient_record::all();
-    // $patients_records=$patients->event_records()->where('id',1)->get();
+
 
     $query = "SELECT  pr.*, d.serialnumber,COUNT(er.type) as events_count
     FROM patient_records as pr
@@ -34,7 +33,7 @@ class PatientRecordController extends Controller
         }
 
 
-    // $patients_records=$patients->event_records()->get();
+
 
 
     }//end of
